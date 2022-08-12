@@ -40,7 +40,7 @@ next.addEventListener('click', function() {
 	a += 33.33;
 	trackTop.style.width = a + '%';
 	stepCircleShow(initialnum);
-	for(let i=0; i<=initialnum; i++) {
+	for(var i=0; i<=initialnum; i++) {
 		stepCircle[i].style.visibility = 'visible';
 	}
 })
@@ -51,7 +51,7 @@ prev.addEventListener('click', function() {
 	a -= 33.33;
 	trackTop.style.width = a + '%';
 	stepCircleShow(initialnum);
-	for(let i=0; i<=initialnum; i++) {
+	for(var i=0; i<=initialnum; i++) {
 		stepCircle[i].style.visibility = 'visible';
 	}
 })
