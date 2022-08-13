@@ -122,7 +122,7 @@ span {
 }
 
 .wrapper {
-  width: 30%;
+  width: 320px;
   display: flex;
   flex-direction: column;
   gap: 40px;
@@ -175,7 +175,7 @@ span {
   text-indent: -99999px;
 }
 
-.step-circle:not(:first-child) {
+.step-circle.visibilityHidden {
   visibility: hidden;
 }
 
@@ -221,6 +221,11 @@ span {
   cursor: pointer;
   text-transform: capitalize;
   transition: all .3s;
+}
+
+.control.bg-event {
+  background-color: var(--clr-grey2);
+  pointer-events: none;
 }
 
 /*=================================
